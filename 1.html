@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your_Roll_Number</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Roll Number</h1>
+        <form id="jsonForm">
+            <label for="jsonInput">JSON Input:</label>
+            <input type="text" id="jsonInput" placeholder='{"data": ["A", "B", "1", "z"]}'>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="error" class="error"></p>
+        <div id="options" class="options" style="display:none;">
+            <h2>Select Options</h2>
+            <label>
+                <input type="checkbox" id="alphabets"> Alphabets
+            </label>
+            <label>
+                <input type="checkbox" id="numbers"> Numbers
+            </label>
+            <label>
+                <input type="checkbox" id="highestLowercase"> Highest Lowercase Alphabet
+            </label>
+        </div>
+        <div id="response" class="response"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
